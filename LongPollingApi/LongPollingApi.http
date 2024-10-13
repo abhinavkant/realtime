@@ -1,0 +1,6 @@
+@LongPollingApi_HostAddress = http://localhost:5231
+
+GET {{LongPollingApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

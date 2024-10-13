@@ -1,0 +1,15 @@
+{
+  "name": "clientpolling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eventsource": "^2.0.2"
+  }
+}

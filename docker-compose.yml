@@ -1,0 +1,13 @@
+services:
+  webapi:
+    build: ./LongPollingApi
+    ports:
+      - 8001:443
+      # - 8080:80
+    environment:
+      ASPNETCORE_HTTPS_PORTS: 8001
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_Kestrel__Certificates__Default__Password: changeit
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/aspnetapp.pfx
+    volumes:
+      - ./local.host.dev.p12:/https/aspnetapp.pfx
